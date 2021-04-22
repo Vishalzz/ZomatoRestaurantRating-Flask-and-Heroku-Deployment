@@ -1,0 +1,318 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Restaurant Rating</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+
+ <style>
+h1 {
+  text-align: center;
+  color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Zomato Restaurant Rating</h1>
+
+
+
+</body>
+
+<style>
+body {
+  background-image: url("https://thebarnexpress.com/wp-content/uploads/2016/10/slide-1.jpg");
+  background-position: 200%;
+  background-size: cover;
+}
+</style>
+<!-- https://www.zomato.com/blog/wp-content/uploads/2019/10/Zomato_H1-FY2020.jpg" -->
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <style>
+                    h1 {
+                        text-align: center;
+                    }
+                    
+                </style>
+
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Location -->
+                            <h5 class="card-title">Location</h5>
+                            <select name="Location" id="Location" required="required">
+                                <option value="BTM">BTM</option>
+                                <option value="Banashankari">Banashankari</option>
+                                <option value="Bannerghatta Road">Bannerghatta Road</option>
+                                <option value="Bellandur">Bellandur</option>
+                                <option value="Brigade Road">Brigade Road</option>
+                                <option value="Electronic City">Electronic City</option>
+                                <option value="HSR">HSR</option>
+                                <option value="Indiranagar">Indiranagar</option>
+                                <option value="JP Nagar">JP Nagar</option>
+                                <option value="Jayanagar">Jayanagar</option>
+                                <option value="Koramangala 1st Block">Koramangala 1st Block</option>
+                                <option value="Koramangala 4th Block">Koramangala 4th Block</option>
+                                <option value="Koramangala 6th Block">Koramangala 6th Block</option>
+                                <option value="Koramangala 7th Block">Koramangala 7th Block</option>
+                                <option value="MG Road">MG Road</option>
+                                <option value="Marathahalli">Marathahalli</option>
+                                <option value="Sarjapur Road">Sarjapur Road</option>
+                                <option value="Ulsoor">Ulsoor</option>
+                                <option value="Whitefield">Whitefield</option>
+                                <option value="other_location">other_location</option>
+                                
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Type</h5>
+                            <!-- Destination -->
+                            <select name="Rest_type" id="Rest_type" required="required">
+                                <option value="Bar">Bar</option>
+                                <option value="Beverage Shop">Beverage Shop</option>
+                                <option value="Cafe">Cafe</option>
+                                <option value="Casual Dining">Casual Dining</option>
+                                <option value="Casual Dining, Bar">Casual Dining, Bar</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="Dessert Parlor">Dessert Parlor</option>
+                                <option value="Quick Bites">Quick Bites</option>
+                                <option value="Takeaway, Delivery">Takeaway, Delivery</option>
+                                <option value="other_rest_type">other_rest_type</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+    
+           
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuisines</h5>
+                            <!-- Cuisines -->
+                            <select name="Cuisines" id="Cuisines" required="required">
+                                <option value="Bakery, Desserts">Bakery, Desserts</option>
+                                <option value="Biryani">Biryani</option>
+                                <option value="Cafe">Cafe</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Chinese, North Indian">Chinese, North Indian</option>
+                                <option value="Desserts">Desserts</option>
+                                <option value="Fast Food">Fast Food</option>
+                                <option value="Ice Cream, Desserts">Ice Cream, Desserts</option>
+                                <option value="Mithai, Street Food">Mithai, Street Food</option>
+                                <option value="North India">North India</option>
+                                <option value="North Indian, Chinese">North Indian, Chinese</option>
+                                <option value="North Indian, Chinese, Biryani">North Indian, Chinese, Biryani</option>
+                                <option value="South Indian">South Indian</option>
+                                <option value="South Indian, North Indian, Chinese">South Indian, North Indian, Chinese</option>
+                                <option value="other_cuisines">other_cuisines</option>
+
+
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service type</h5>
+                            <!-- Total Stops -->
+                            <select name="Service_type" required="required">
+                                <option value="Cafes">Cafes</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="Desserts">Desserts</option>
+                                <option value="Dine-out">Dine-out</option>
+                                <option value="Drinks & nightlife">Drinks & nightlife</option>
+                                <option value="Pubs and bars">Pubs and bars</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Online order available</h5>
+                            <!-- Airline -->
+                            <select name="Online_order" id="Online_order" required="required">
+                               
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                             
+
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Book table available</h5>
+                            <!-- Book_tables -->
+                            <select name="Book_table" required="required">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                             
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Votes given:(Please enter votes e.g 700)</h5>
+                            <!-- Votes -->
+                            <input type="text" name="Votes" placeholder="700" required="required" />
+                                                                                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Cost for two people:(Please enter price e.g 800)</h5>
+                            <!-- Cost -->
+                             <input type="text" name="Cost" placeholder="800" required="required" />
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="card card-block justify-content-center">
+                <!-- <div class="card-body  d-flex justify-content-center"> -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                
+
+                                    <h5 class="card-title">User Rating</h5>
+                                <!-- Airline -->
+                                    <select name="Reviews_list" id="Reviews_list" required="required">
+                                   
+                                        <option value=1.0>1.0</option>
+                                        <option value=1.5>1.5</option>
+                                        <option value=2.0>2.0</option>
+                                        <option value=2.5>2.5</option>
+                                        <option value=3.0>3.0</option>
+                                        <option value=3.5>3.5</option>
+                                        <option value=4.0>4.0</option>
+                                        <option value=4.5>4.5</option>
+                                        <option value=5.0>5.0</option>
+
+                                 
+
+                                    
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+
+
+            
+            <!-- Predict -->
+        <br> 
+             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+
+        <h3 style="background-color:black;color:yellow">{{ prediction_text }}</h3>
+
+        <br>
+        
+        <p style="background-color:grey;">©Design: Vishal Gupta</p>
+
+        <p> ©Design: Vishal Gupta</p>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
