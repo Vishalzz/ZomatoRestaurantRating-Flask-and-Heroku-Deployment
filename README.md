@@ -42,8 +42,8 @@ You must have Scikit Learn, Pandas (for Machine Leraning Model) and streamlit (f
 
 ### Project Structure
 This project has four major parts :
-1. **Model Building**- This contains code for our Machine Learning model to predict restaurant rating based on  data in 'zomato.csv' file.For more checkout 
-2. **ZomatoRating_2.py** - This contain streamlit API that contains all the process,detailed analysis,model building phases(done in model.ipynb) and predict rating API.
+1. **Model Building**- This contains code for our Machine Learning model to predict restaurant rating based on  data in 'zomato.csv' file.For more checkout https://github.com/Vishalzz/Streamlit-Zomato-Restaurant-rating-Full-model-building-and-prediction
+This contain streamlit API that contains all the process,detailed analysis,model building phases(done in model.ipynb) and predict rating API.
 This API contains :
 ##### • Data Preparation
 ##### • EDA
@@ -53,29 +53,7 @@ This API contains :
 ##### • About us.
 You can select any one of the option at a time to see the result.
 
-3. **app.py**- This contains only predict restaurant rating API  that receives restaurant details through GUI or API calls, computes the precited rating based on our model and returns it.
+3. **app.py**- This contains Flask APIs that receives restaurant details through GUI or API calls, computes the precited rating based on our model and returns it.
 4. **templates**- This folder contains the HTML template to allow user to enter restaurant detail and displays the predicted restaurant rating.
 
-### Running the project
-1. Ensure that you are in the project home directory. Run below command to start streamlit API.
 
-#### For detailed "model building and prediction" API
-```
-streamlit run ZomatoRating_2.py --server.maxUploadSize=1028
-```
-
-#### For "predicton" API only
-```
-streamlit run app.py
-```
-
-By default, flask will run on port 8501.
-
-2. Navigate to URL http://localhost:8501
-
-You should be able to view the homepage.
-
-Select all the option given in dropdown-->enter valid numerical values in votes and cost input boxes-->hit Predict.
-
-If everything goes well, you should  be able to see the restaurant rating.
-![image](https://user-images.githubusercontent.com/67735416/115828015-bd831c00-a42a-11eb-8a85-4cf19d7fc930.png)
