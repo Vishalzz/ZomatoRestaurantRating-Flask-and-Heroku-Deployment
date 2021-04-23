@@ -38,7 +38,7 @@ Acknowledgements The data scraped was entirely for educational purposes only. No
 Source Dataset: Kaggle       
 
 ### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
+You must have Scikit Learn, Pandas,Numpy(for Machine Leraning Model) and Flask (for API) installed.
 
 ### Project Structure
 This project has three major parts :
