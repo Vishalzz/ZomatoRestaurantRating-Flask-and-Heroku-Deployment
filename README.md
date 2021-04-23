@@ -42,7 +42,8 @@ You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for A
 
 ### Project Structure
 This project has four major parts :
-1. **Model Building**- This contains code for our Machine Learning model to predict restaurant rating based on  data in 'zomato.csv' file.For more checkout https://github.com/Vishalzz/Streamlit-Zomato-Restaurant-rating-Full-model-building-and-prediction
+1. **Model Building**- This contains code for our Machine Learning model to predict restaurant rating based on  data in 'zomato.csv' file.
+2. For more checkout https://github.com/Vishalzz/Streamlit-Zomato-Restaurant-rating-Full-model-building-and-prediction 
 This contain streamlit API that contains all the process,detailed analysis,model building phases(done in model.ipynb) and predict rating API.
 This API contains :
 ##### • Data Preparation
