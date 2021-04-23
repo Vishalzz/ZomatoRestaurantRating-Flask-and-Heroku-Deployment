@@ -41,9 +41,11 @@ Source Dataset: Kaggle
 You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
 
 ### Project Structure
-This project has four major parts :
+This project has three major parts :
 1. **Model Building**- This contains code for our Machine Learning model to predict restaurant rating based on  data in 'zomato.csv' file.
-2. For more checkout https://github.com/Vishalzz/Streamlit-Zomato-Restaurant-rating-Full-model-building-and-prediction 
+
+For more checkout https://github.com/Vishalzz/Streamlit-Zomato-Restaurant-rating-Full-model-building-and-prediction 
+
 This contain streamlit API that contains all the process,detailed analysis,model building phases(done in model.ipynb) and predict rating API.
 This API contains :
 ##### • Data Preparation
@@ -54,7 +56,7 @@ This API contains :
 ##### • About us.
 You can select any one of the option at a time to see the result.
 
-3. **app.py**- This contains Flask APIs that receives restaurant details through GUI or API calls, computes the precited rating based on our model and returns it.
-4. **templates**- This folder contains the HTML template to allow user to enter restaurant detail and displays the predicted restaurant rating.
+2. **app.py**- This contains Flask APIs that receives restaurant details through GUI or API calls, computes the precited rating based on our model and returns it.
+3. **templates**- This folder contains the HTML template to allow user to enter restaurant detail and displays the predicted restaurant rating.
 
 
